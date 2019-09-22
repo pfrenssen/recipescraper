@@ -11,4 +11,6 @@ Requirements
 Usage
 -----
 
+```
 $ scrapy crawl dagelijksekost
+```
