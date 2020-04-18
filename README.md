@@ -14,3 +14,5 @@ Usage
 ```
 $ scrapy crawl dagelijksekost
 ```
+
+A list of recipes will be saved in `recipes.txt`.
