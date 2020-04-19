@@ -1,5 +1,11 @@
 # Compiled bytecode.
 __pycache__/
 
-# Output files
+# Output files.
 /*.txt
+
+# IDE configuration files.
+/.idea/
+
+# Virtual environment.
+/venv/
