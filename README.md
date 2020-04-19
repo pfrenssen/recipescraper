@@ -12,7 +12,7 @@ Usage
 -----
 
 ```
-$ scrapy crawl dagelijksekost
+$ scrapy crawl crawl -o output.json
 ```
 
-A list of recipes will be saved in `recipes.txt`.
+A list of recipes will be saved in `output.json`.
