@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 import scrapy
+
 
 class DagelijksekostSpider(scrapy.Spider):
     name = 'dagelijksekost'
