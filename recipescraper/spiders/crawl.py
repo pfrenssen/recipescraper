@@ -1,5 +1,8 @@
+import datetime
 import json
 import re
+import socket
+
 from scrapy.linkextractors import LinkExtractor
 from scrapy.loader import ItemLoader
 from scrapy.spiders import CrawlSpider, Rule
@@ -18,6 +21,11 @@ class CrawlySpider(CrawlSpider):
         l = ItemLoader(item=RecipeItem(), response=response)
         l.add_xpath('title', '(//h1)[1]/text()')
         l.add_xpath('image', '//meta[@property = "og:image"]/@content')
+        l.add_value('url', response.url)
+        l.add_value('retrieval_date', datetime.datetime.now())
+        l.add_value('spider', self.name)
+        l.add_value('project', self.settings.get('BOT_NAME'))
+        l.add_value('instance', socket.gethostname())
 
         # Retrieve the ingredients from structured JS data in the page.
         js_script = response.xpath('//*[@class="content-container"]//script').get()

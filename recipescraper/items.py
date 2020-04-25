@@ -11,3 +11,10 @@ class RecipeItem(scrapy.Item):
     ingredients = scrapy.Field()
     keywords = scrapy.Field()
     time = scrapy.Field()
+
+    # Metadata
+    url = scrapy.Field()
+    retrieval_date = scrapy.Field()
+    spider = scrapy.Field()
+    project = scrapy.Field()
+    instance = scrapy.Field()
