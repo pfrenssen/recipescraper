@@ -8,6 +8,7 @@ from scrapy.loader import ItemLoader
 from scrapy.spiders import CrawlSpider, Rule
 from recipescraper.items import RecipeItem
 
+
 class CrawlySpider(CrawlSpider):
     name = 'crawl'
     allowed_domains = ['dagelijksekost.een.be']
