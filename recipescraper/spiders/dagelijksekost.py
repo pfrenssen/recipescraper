@@ -37,6 +37,6 @@ class CrawlySpider(CrawlSpider):
                 for ingredient in json.loads(ingredients_json):
                     product_name = ingredient['product']['name']
                     ingredients.append(product_name)
-                l.add_value('ingredients', ",".join(ingredients))
+                l.add_value('ingredients', ingredients)
 
         return l.load_item()
