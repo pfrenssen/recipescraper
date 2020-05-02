@@ -10,7 +10,7 @@ from recipescraper.items import RecipeItem
 
 
 class CrawlySpider(CrawlSpider):
-    name = 'crawl'
+    name = 'dagelijksekost'
     allowed_domains = ['dagelijksekost.een.be']
     start_urls = ['https://dagelijksekost.een.be/az-index']
 
