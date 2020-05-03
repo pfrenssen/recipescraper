@@ -66,9 +66,9 @@ DOWNLOAD_DELAY = 0.1
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'recipescraper.pipelines.RecipescraperPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'recipescraper.pipelines.JsonApiPipeline': 900,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
